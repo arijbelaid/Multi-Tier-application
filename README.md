@@ -30,7 +30,7 @@ docker stats --no-stream
 
 Test 5 : Interface frontend
 --
-# Ouvrir dans le navigateur
+Ouvrir dans le navigateur
 start http://localhost:8081
 
 Test 6 : Ajout de données
@@ -47,10 +47,10 @@ docker logs contacts-backend
 Test 8 : Isolation réseau
 ---
 
-# Frontend → Database (DOIT ÉCHOUER)
+Frontend → Database (DOIT ÉCHOUER)
 docker exec contacts-frontend ping database
 
-# Backend → Database (DOIT RÉUSSIR)
+ Backend → Database (DOIT RÉUSSIR)
 
 docker exec contacts-backend ping database -c 2
 
