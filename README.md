@@ -32,10 +32,10 @@ Test 5 : Interface frontend
 --
 # Ouvrir dans le navigateur
 start http://localhost:8081
+
 Test 6 : Ajout de données
 --
 
-# Via API
 curl -X POST http://localhost:3000/api/contacts \
   -H "Content-Type: application/json" \
   -d '{"nom":"Test Lab","email":"test@lab.com","telephone":"0123456789"}'
