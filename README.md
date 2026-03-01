@@ -48,6 +48,7 @@ Test 8 : Isolation réseau
 ---
 
 Frontend → Database (DOIT ÉCHOUER)
+
 docker exec contacts-frontend ping database
 
  Backend → Database (DOIT RÉUSSIR)
